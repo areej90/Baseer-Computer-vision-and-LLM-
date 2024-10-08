@@ -59,22 +59,6 @@ to maintain during major events.
 <img width="1025" alt="Screenshot 1446-04-04 at 2 50 36 AM" src="https://github.com/user-attachments/assets/c6d81493-59ba-4c12-9419-6a4730087009">
 
 
-
-
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/shhouuq/Baseer-Computer-vision-and-LLM-.git
-
-## Requirements
-
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install requirements.
-
-```bash
-pip install -r requirements.txt
-```
-
 ## Contributing
 
 If you would like to contribute to this project, please fork the repository and submit a pull request. Make sure to update the tests as appropriate.
