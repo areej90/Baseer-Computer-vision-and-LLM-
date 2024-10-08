@@ -21,9 +21,6 @@ experience during major events.
 
 - [Data](#data)
 - [Structure](#structure)
-- [Installation](#installation)
-- [Requirements](#requirements)
-- [Usage](#usage)
 - [Contributing](#contributing)
 
 ## Data
