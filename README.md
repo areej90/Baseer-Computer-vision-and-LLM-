@@ -75,10 +75,6 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install require
 pip install -r requirements.txt
 ```
 
-## Usage
-
-[click here](https://drive.google.com/drive/folders/1cwcCq1WSys0HbrQnpHc-rHRpwfuAAOFL?usp=drive_link) to load the classification model.
-
 ## Contributing
 
 If you would like to contribute to this project, please fork the repository and submit a pull request. Make sure to update the tests as appropriate.
