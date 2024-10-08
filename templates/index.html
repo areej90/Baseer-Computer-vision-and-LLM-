@@ -10,11 +10,10 @@
     <style>
         body {
             font-family: 'Rubik', sans-serif;
-            direction: rtl; /* الاتجاه من اليمين إلى اليسار */
-            text-align: right; /* محاذاة النص لليمين */
+            direction: rtl; 
+            text-align: right; 
         }
 
-        /* خصائص الفيديو */
         #uploadedVideo {
             width: 100%;
             max-width: 300px;
@@ -22,33 +21,27 @@
             border-radius: 10px;
         }
 
-        /* جعل التنبيه يحتوي على محاذاة لليمين */
         .alert {
             text-align: right;
             direction: rtl;
         }
 
-        /* إضافة مسافة بين الزر والرسالة */
         #uploadResult, #answerResult {
-            margin-top: 20px; /* مسافة أعلى الرسالة */
-            clear: both; /* تجنب التداخل مع الزر */
+            margin-top: 20px; 
+            clear: both; 
             position: relative;
         }
     </style>
 </head>
 
 <body>
-    <!-- شريط التنقل -->
-    <!-- شريط التنقل -->
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <!-- الشعار الأيمن -->
             <a href="#" class="logo logo-right me-auto"></a>
     
-            <!-- الشعار الأساسي في المنتصف -->
             <a class="navbar-brand mx-auto logo-main" href="#"></a>
     
-            <!-- الشعار الأيسر -->
             <a href="#" class="logo logo-left ms-auto"></a>
         </div>
     </nav>
@@ -59,32 +52,26 @@
         <h1 class="mt-5 text-center">مرحبا بك في بصير لتحليل الزحام من الفيديو</h1>
 
         <div class="row">
-            <!-- رفع الفيديو وطرح الأسئلة -->
             <div class="col-md-8">
-                <!-- رفع الفيديو -->
                 <div class="mt-4">
                     <h3>رفع الفيديو</h3>
                     <form id="uploadForm" enctype="multipart/form-data">
                         <input type="file" name="video" accept="video/mp4" class="form-control mb-2" required>
                         <button type="submit" class="btn btn-primary">رفع الفيديو</button>
                     </form>
-                    <!-- إضافة مسافة كافية بين الزر والرسالة -->
                     <div id="uploadResult" class="mt-3"></div> <!-- الرسالة أسفل الزر بفاصل جيد -->
                 </div>
 
-                <!-- سؤال المستخدم -->
                 <div class="mt-5">
                     <h3>اسأل عن حالة الزحام</h3>
                     <form id="askForm">
                         <input type="text" id="question" class="form-control mb-2" placeholder="اكتب سؤالك هنا" required>
                         <button type="submit" class="btn btn-success">إرسال السؤال</button>
                     </form>
-                    <!-- إضافة مسافة كافية بين الزر والرسالة -->
                     <div id="answerResult" class="mt-3"></div> <!-- الرسالة أسفل الزر بفاصل جيد -->
                 </div>
             </div>
             
-            <!-- عرض الفيديو -->
             <div class="col-md-4 text-start">
                 <div class="mt-4" id="videoContainer" style="display: none;">
                     
@@ -98,18 +85,14 @@
     </div>
 
 
-    <!-- شريط التنقل السفلي -->
-<!-- شريط التنقل السفلي -->
-<!-- شريط التنقل السفلي -->
 <footer class="footer navbar navbar-dark bg-dark">
     <div class="container-fluid text-center">
         <span class="text-white">تواصل مع المبرمجين:</span>
         
-        <!-- المبرمج 1 -->
         <div class="d-inline-block mx-2">
             <span class="text-white"> ريم </span>
-            <a href="https://www.linkedin.com/in/reem-albalawii/" target="_blank" class="linkedin-icon"></a>
-            <a href="https://github.com/ReemAlbluwi" target="_blank" class="github-icon"></a>
+            <a href="https://www.linkedin.com/in/username1" target="_blank" class="linkedin-icon"></a>
+            <a href="https://github.com/username2" target="_blank" class="github-icon"></a>
         </div>
 
         <!-- المبرمج 2 -->
@@ -147,7 +130,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        // رفع الفيديو
         document.getElementById('uploadForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const formData = new FormData(this);
@@ -162,7 +144,6 @@
                     document.getElementById('uploadResult').innerHTML = `<div class="alert alert-danger">${data.error}</div>`;
                 } else {
                     document.getElementById('uploadResult').innerHTML = `<div class="alert alert-success">${data.message}</div>`;
-                    // عرض الفيديو بعد الرفع
                     document.getElementById('videoSource').src = data.video_url;
                     document.getElementById('uploadedVideo').load();
                     document.getElementById('videoContainer').style.display = 'block';
@@ -171,7 +152,6 @@
             .catch(error => console.error('Error:', error));
         });
 
-        // إرسال السؤال
         document.getElementById('askForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const question = document.getElementById('question').value;
@@ -195,8 +175,6 @@
         });
     </script>
 
-
-<!-- شريط التنقل السفلي -->
 
 
 </body>
