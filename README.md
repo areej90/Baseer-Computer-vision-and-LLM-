@@ -26,9 +26,9 @@ experience during major events.
 ## Data
 
 The data used in this project were gathered manually from platforms and social media across the internet. The data reched to 1200 images seperated into 3 categories: 
-- Caused traffic (400 img)
-- Regular traffic (400 img)
-- No traffic (400 img)
+- Caused traffic 
+- Regular traffic 
+- No traffic 
 
 ## Structure
 
