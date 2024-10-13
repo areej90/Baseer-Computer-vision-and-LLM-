@@ -21,7 +21,7 @@ experience during major events.
 
 - [Data](#data)
 - [Structure](#structure)
-- [Contributing](#contributing)
+- [Baseer Syatem ](#Baseer-Syatem )
 
 ## Data
 
@@ -56,6 +56,6 @@ to maintain during major events.
 <img width="1025" alt="Screenshot 1446-04-04 at 2 50 36 AM" src="https://github.com/user-attachments/assets/c6d81493-59ba-4c12-9419-6a4730087009">
 
 
-## Contributing
+## Baseer Syatem 
 
-If you would like to contribute to this project, please fork the repository and submit a pull request. Make sure to update the tests as appropriate.
+![Baseer_Syatem](static/Baseer_Syatem.png)
